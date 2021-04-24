@@ -1,0 +1,6 @@
+<ng-container [ngSwitch]="displayType" class="container">
+    <ng-container *ngSwitchCase="'basic'">
+        {{getUser()}}
+    </ng-container>
+    <ng-container *ngSwitchDefault>{{getUser()}}</ng-container>
+</ng-container>
